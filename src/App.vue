@@ -7,7 +7,6 @@
 
 <script>
 import mainTabBar from 'components/content/MainTabBar'
-// import mainTabBar from './components/content/mainTabBar.vue'
 export default {
   components: {
 		mainTabBar
@@ -16,6 +15,7 @@ export default {
 }
 </script>
 
-<style>
-
+<style scope>
+@import "assets/css/base.css";
+@import "assets/css/normalize.css"
 </style>
