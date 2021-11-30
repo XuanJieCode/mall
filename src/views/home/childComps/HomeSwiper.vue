@@ -34,7 +34,7 @@ export default {
 			let item = document.getElementsByClassName('swiperItem');
 			let item_point = document.getElementsByClassName("swiper_point");
 			let itemLength = 3;
-			console.log(itemLength);
+			// console.log(itemLength);
 			this.timer = setInterval(()=>{
 				item[itemLength].style.opacity = 0;
 				// item_point[itemLength].style.backgroundColor = "tomato"
@@ -64,7 +64,7 @@ export default {
 #swiper {
   overflow: hidden;
   
-	margin: auto;
+	/* margin-top: 44px; */
   width: 100%;
   height: 210px;
 }
@@ -77,7 +77,7 @@ export default {
 	position: absolute;
 	opacity: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
 	transition: 3s;
 }
 img {
@@ -86,12 +86,15 @@ img {
 }
 .swiper_point_wrap {
 	display: flex;
+	position: absolute;
+	bottom: 3%;
+
 	align-items: center;
 	justify-content: center;
-	position: absolute;
+	
 	width: 100%;
 	height: 35px;
-	bottom: 10px;
+	
 }
 .swiper_point {
 	margin: 0 5px;

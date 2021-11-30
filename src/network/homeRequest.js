@@ -6,6 +6,15 @@ export function getHomeMultidata() {
 		params: {
 			imgs:'home'
 		}
+	})
+}
 
+export function getHomeGoods(type, page){
+	return request({
+		url: '/http/home.php',
+		params:{
+			type,
+			page
+		}
 	})
 }

@@ -6,7 +6,7 @@
     <div v-else>
       <slot name="tabbar_icon"></slot>
     </div>
-    <div :class="{ active: isActive }">
+    <div class="bar_txt" :class="{ active: isActive }">
       <slot name="tabbar_text"></slot>
     </div>
   </div>
@@ -39,7 +39,7 @@ export default {
 
 <style>
 .tabbar-item {
-  margin-top: 5px;
+  margin: 3px 0 2px;
   flex: 1;
   text-align: center;
   height: 49px;
@@ -48,6 +48,10 @@ export default {
   width: 14px;
   height: 24px;
   vertical-align: middle;
+}
+.bar_txt {
+	font-size: 14px;
+	font-family:'Times New Roman', Times, serif;
 }
 .active {
   color: brown;
